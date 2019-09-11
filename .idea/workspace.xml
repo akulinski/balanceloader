@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97b91a85-3fe8-471e-ac7d-74f02b5e521d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/AbstractBalancingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/AbstractBalancingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/IBalancingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/IBalancingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/LoadDrivenStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/LoadDrivenStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.akulinski.SequentialStrategyTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.akulinski.SequentialStrategyTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.akulinski.SequentialStrategyTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.akulinski.SequentialStrategyTest.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +194,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568214496836</updated>
-      <workItem from="1568214500407" duration="12294000" />
+      <workItem from="1568214500407" duration="12936000" />
     </task>
     <servers />
   </component>

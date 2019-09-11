@@ -1,4 +1,6 @@
-package com.akulinski;
+package com.akulinski.core.strategies;
+
+import com.akulinski.core.IHost;
 
 import java.util.List;
 

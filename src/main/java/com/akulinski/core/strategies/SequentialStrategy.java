@@ -1,5 +1,6 @@
-package com.akulinski;
+package com.akulinski.core.strategies;
 
+import com.akulinski.core.IHost;
 import lombok.Builder;
 
 import java.util.List;
@@ -25,6 +26,11 @@ public class SequentialStrategy extends AbstractBalancingStrategy {
         } catch (IndexOutOfBoundsException ex) {
             return Optional.empty();
         }
+    }
+
+    @Override
+    public LoadBalancingStrategy getType() {
+        return LoadBalancingStrategy.SEQUENTIAL;
     }
 
     private void checkForReset() {

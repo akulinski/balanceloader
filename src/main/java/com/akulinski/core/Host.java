@@ -1,4 +1,6 @@
-package com.akulinski;
+package com.akulinski.core;
+
+import com.akulinski.Request;
 
 public class Host implements IHost {
 
@@ -14,7 +16,7 @@ public class Host implements IHost {
     }
 
     @Override
-    public void handleRequest(Request $request) {
+    public void handleRequest(Request request) {
 
     }
 }

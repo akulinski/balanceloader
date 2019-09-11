@@ -1,5 +1,9 @@
 package com.akulinski;
 
+import com.akulinski.core.Host;
+import com.akulinski.core.strategies.IBalancingStrategy;
+import com.akulinski.core.IHost;
+import com.akulinski.core.strategies.LoadDrivenStrategy;
 import org.junit.Before;
 import org.junit.Test;
 

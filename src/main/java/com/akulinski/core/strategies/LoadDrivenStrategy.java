@@ -1,5 +1,6 @@
-package com.akulinski;
+package com.akulinski.core.strategies;
 
+import com.akulinski.core.IHost;
 import lombok.Builder;
 
 import java.util.Comparator;
@@ -24,6 +25,11 @@ public class LoadDrivenStrategy extends AbstractBalancingStrategy {
         }
 
         return hosts.stream().min(Comparator.comparing(IHost::getLoad));
+    }
+
+    @Override
+    public LoadBalancingStrategy getType() {
+        return LoadBalancingStrategy.LOAD_DRIVEN;
     }
 
     private Optional<IHost> checkForHostsWithLoad() {

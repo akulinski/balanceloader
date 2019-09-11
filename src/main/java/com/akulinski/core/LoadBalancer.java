@@ -7,6 +7,10 @@ import lombok.Getter;
 
 import java.util.List;
 
+/**
+ * Passes requests to hosts based on
+ * balancing strategy
+ */
 public class LoadBalancer implements ILoadBalancer {
 
     @Getter

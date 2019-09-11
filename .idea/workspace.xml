@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97b91a85-3fe8-471e-ac7d-74f02b5e521d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/BalancingStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/LoadBalancer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/akulinski/LoadBalancerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/AbstractBalancingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/AbstractBalancingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/Host.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/Host.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/IBalancingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/IBalancingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/IHost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/IHost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/ILoadBalancer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/ILoadBalancer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/LoadBalancer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/LoadBalancingAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/LoadBalancingAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/LoadDrivenStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/LoadDrivenStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/SequentialStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/SequentialStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/akulinski/LoadDrivenStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/akulinski/LoadDrivenStrategyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/akulinski/SequentialStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/akulinski/SequentialStrategyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/akulinski/Host.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/akulinski/Host.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/akulinski/IBalancingStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/akulinski/IBalancingStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/akulinski/LoadBalancer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/akulinski/LoadBalancer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/akulinski/SequentialStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/akulinski/SequentialStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/AbstractBalancingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/AbstractBalancingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/IBalancingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/IBalancingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/LoadDrivenStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/LoadDrivenStrategy.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +194,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568214496836</updated>
-      <workItem from="1568214500407" duration="11689000" />
+      <workItem from="1568214500407" duration="12294000" />
     </task>
     <servers />
   </component>
@@ -236,27 +221,27 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/LoadDrivenStrategy.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/LoadDrivenStrategy.java</url>
           <line>19</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/LoadDrivenStrategy.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/LoadDrivenStrategy.java</url>
           <line>22</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/LoadDrivenStrategy.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/LoadDrivenStrategy.java</url>
           <line>38</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/LoadDrivenStrategy.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/LoadDrivenStrategy.java</url>
           <line>39</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/LoadDrivenStrategy.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/com/akulinski/core/strategies/LoadDrivenStrategy.java</url>
           <line>42</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>

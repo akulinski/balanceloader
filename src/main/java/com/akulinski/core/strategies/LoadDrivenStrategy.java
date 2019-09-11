@@ -8,6 +8,11 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * Strategy that takes first host with
+ * load lower than 0.75 or picks smallest
+ * if all hosts are above 0.75
+ */
 public class LoadDrivenStrategy extends AbstractBalancingStrategy {
 
     @Builder
@@ -15,10 +20,17 @@ public class LoadDrivenStrategy extends AbstractBalancingStrategy {
         super(hosts);
     }
 
+
+    /**
+     * If all hosts have load above
+     * 0.75 picks smallest
+     *
+     * @return nullable
+     */
     @Override
     public Optional<IHost> pickHost() {
 
-        final Optional<IHost> hostsUnder = checkForHostsWithLoad();
+        final Optional<IHost> hostsUnder = checkForHostsWithLowLoad();
 
         if (hostsUnder.isPresent()) {
             return hostsUnder;
@@ -32,7 +44,15 @@ public class LoadDrivenStrategy extends AbstractBalancingStrategy {
         return LoadBalancingStrategy.LOAD_DRIVEN;
     }
 
-    private Optional<IHost> checkForHostsWithLoad() {
+
+    /**
+     * Filters hosts looking for
+     * that, that have load smaller
+     * than 0.75
+     *
+     * @return
+     */
+    private Optional<IHost> checkForHostsWithLowLoad() {
         final var hostsUnder = hosts.stream()
                 .filter(iHost -> iHost.getLoad() < 0.75)
                 .collect(Collectors.toList());

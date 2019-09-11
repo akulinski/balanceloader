@@ -6,6 +6,11 @@ import lombok.Builder;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Iterates over all hosts
+ * after reaching the end of list
+ * starts at 0 index again
+ */
 public class SequentialStrategy extends AbstractBalancingStrategy {
 
 
@@ -16,15 +21,23 @@ public class SequentialStrategy extends AbstractBalancingStrategy {
         super(hosts);
     }
 
-
+    /**
+     * Every request increments object state {@link SequentialStrategy#currentHostIndex}
+     * because of that synchronization is used for thread safety
+     *
+     * @return
+     */
     public Optional<IHost> pickHost() {
+        synchronized (SequentialStrategy.class) {
 
-        checkForReset();
+            checkForReset();
 
-        try {
-            return getCurrentHostAndIncrementState();
-        } catch (IndexOutOfBoundsException ex) {
-            return Optional.empty();
+            try {
+                return getCurrentHostAndIncrementState();
+            } catch (IndexOutOfBoundsException ex) {
+                return Optional.empty();
+            }
+
         }
     }
 

@@ -7,6 +7,9 @@ import com.akulinski.core.strategies.SequentialStrategy;
 
 import java.util.List;
 
+/**
+ * Factory of all strategies
+ */
 public class BalancingStrategyFactory {
     private List<IHost> hosts;
 

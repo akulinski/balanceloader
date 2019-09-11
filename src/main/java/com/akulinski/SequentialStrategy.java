@@ -5,16 +5,16 @@ import lombok.Builder;
 import java.util.List;
 import java.util.Optional;
 
-public class SequentialStrategy implements IBalancingStrategy {
+public class SequentialStrategy extends AbstractBalancingStrategy {
 
-    private List<IHost> hosts;
 
     private int currentHostIndex = 0;
 
     @Builder
     public SequentialStrategy(List<IHost> hosts) {
-        this.hosts = hosts;
+        super(hosts);
     }
+
 
     public Optional<IHost> pickHost() {
 
